@@ -1,3 +1,4 @@
+/* Base Styles */
 .App {
   padding: 20px;
   max-width: 1400px;
@@ -16,6 +17,7 @@ h1 {
   min-height: calc(100vh - 150px);
 }
 
+/* Left Section */
 .left-section {
   width: 35%;
   display: flex;
@@ -68,6 +70,7 @@ h1 {
   cursor: pointer;
 }
 
+/* Right Section */
 .right-section {
   width: 65%;
 }
@@ -78,9 +81,10 @@ h1 {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding: 20;
+  padding: 20px;
 }
 
+/* User Info */
 .user-info {
   position: absolute;
   top: 10px;
@@ -92,4 +96,55 @@ h1 {
   margin: 0;
   padding: 0;
   color: black;
+}
+
+.user-info a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.user-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+
+  .search-container {
+    flex-direction: column;
+  }
+
+  .search-container input {
+    width: 100%;
+  }
+
+  .image-card img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .image-card img {
+    height: 120px;
+  }
+
+  .user-info h1 {
+    font-size: 16px;
+  }
 }
