@@ -169,7 +169,7 @@ function App() {
     </a>
   </h1>
       </div>
-      <h1>Image Editor</h1>
+      <h1>Image Generation</h1>
 
       <div className="main-container">
         <div className="left-section">
